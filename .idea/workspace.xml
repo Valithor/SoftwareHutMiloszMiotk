@@ -1,11 +1,22 @@
+  
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb8700ae-dd68-4e50-b0b9-f980700911bd" name="Default Changelist" comment="" />
+    <list default="true" id="bb8700ae-dd68-4e50-b0b9-f980700911bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/movies.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/drawerComponent/DrawerComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/drawerComponent/DrawerComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/searchMovie/SearchMovie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/searchMovie/SearchMovie.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bOOKaWwutmUxYSjgg3t6AJlFum" />
   <component name="ProjectViewState">
@@ -16,15 +27,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3 - 04.05 - zrobione" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="ts.external.directory.path" value="M:\WebStorms\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="C:\Users\Viking\Desktop\UWM\UWM_Lessons\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,6 +52,7 @@
       <workItem from="1588499611637" duration="6891000" />
       <workItem from="1588600437355" duration="166000" />
       <workItem from="1588600654381" duration="305000" />
+      <workItem from="1589204874176" duration="6084000" />
     </task>
     <servers />
   </component>
@@ -62,5 +76,13 @@
       <screen x="0" y="0" width="3840" height="2120" />
     </state>
     <state x="1747" y="1125" key="FileChooserDialogImpl/0.0.3840.2120@0.0.3840.2120" timestamp="1588600959846" />
+    <state x="1533" y="1347" key="SettingsEditor" timestamp="1589206509799">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1533" y="1347" key="SettingsEditor/0.0.3840.2120@0.0.3840.2120" timestamp="1589206509799" />
+    <state x="1730" y="679" key="run.anything.popup" timestamp="1589208256420">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="1730" y="679" key="run.anything.popup/0.0.3840.2120@0.0.3840.2120" timestamp="1589208256420" />
   </component>
 </project>
