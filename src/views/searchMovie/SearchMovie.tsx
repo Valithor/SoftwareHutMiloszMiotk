@@ -1,9 +1,10 @@
 import React from 'react';
 import NavPanel from '../../components/navPanel/NavPanel'
-import movieService, { IMoviesProps } from '../../services/movies.service';
+import movieService, { IMoviesProps} from '../../services/movies.service';
 import { makeStyles } from '@material-ui/core/styles';
 import useDebounce from '../../hooks/debounce';
 import {Container } from '@material-ui/core';
+import { NavLink } from 'react-router-dom';
 
 
 const useStyles = makeStyles({
@@ -69,6 +70,7 @@ const SearchMovie = () => {
             {!!movies?.movies.length &&
             movies?.movies.map(movie => (
               <div key={movie.id} className={classes.box}>
+                <NavLink to={`/movie/${movie.id}`}>
                 <div className={classes.title}> {movie.title}</div>
                 <div>
                   <img className={classes.center} src={movie.poster}
@@ -77,6 +79,7 @@ const SearchMovie = () => {
                 <div className={classes.center}> {movie.type}</div>
                 <div className={classes.center}> {movie.year} </div>
                 <br/>
+                </NavLink>
               </div>
             ))
             }

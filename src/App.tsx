@@ -11,18 +11,14 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Switch>
-          <Route path="/movie" component={Movie} />
-          <Route path="/search" component={SearchMovie} />
-          <Route path="/" component={Home} />
-        </Switch>
+          <Switch>
+            <Route path="/movie/:id" component={Movie}/>
+            <Route path="/search" component={SearchMovie}/>
+            <Route path="/" component={Home}/>
+          </Switch>
       </BrowserRouter>
     </div>
   );
 };
 
 export default App;
-
-
-
-
