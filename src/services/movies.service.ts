@@ -119,6 +119,10 @@ interface IMovieProps {
   votes: string;
   poster: string;
 }
+export interface IWatchLater extends IMovieResponse{
+  id: number;
+  watched: boolean;
+}
 
 
 const movieService = {

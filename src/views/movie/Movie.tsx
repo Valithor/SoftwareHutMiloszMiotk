@@ -2,8 +2,11 @@ import React from 'react';
 import NavPanel from '../../components/navPanel/NavPanel';
 import movieService from '../../services/movies.service';
 import {IMoviesProps, IMovieResponse} from '../../services/movies.service';
-import {Grid, Typography, Paper, makeStyles, createStyles} from '@material-ui/core/';
+import {Grid, Typography, Paper, makeStyles, createStyles, IconButton, Tooltip} from '@material-ui/core/';
 import {useParams} from 'react-router-dom';
+import {Bookmark} from '@material-ui/icons/';
+import { WatchLaterService } from '../../services/watchLater.service';
+import { useService } from '../../hooks/useService';
 
 const useStyles= makeStyles((theme: any)=>
 createStyles({
@@ -23,9 +26,16 @@ createStyles({
 
 const Movie = () => {
     const classes = useStyles();
-    const {id}=useParams<{id: string}>();
-
+    let {id}=useParams();
+    const watchLaterService = useService(WatchLaterService);
+   
     const [movieInfo, setMovieInfo] = React.useState<IMovieResponse | null>(null);
+    const handleAddToWatchLater = () => {
+        if (movieInfo != null)
+            watchLaterService.addToWatchLater(movieInfo, id, false);
+        else
+            return;
+    }
     React.useEffect(()=>{
         movieService.searchById(id).then(resp=>{
             if(resp)
@@ -48,6 +58,9 @@ const Movie = () => {
                             <Grid item xs>
                                 <Typography variant="h6" gutterBottom>
                                     {movieInfo.Title}, {movieInfo.Year}
+                                    <div onClick={handleAddToWatchLater}>
+                                <IconButton><Bookmark /></IconButton>
+                                </div>
                                 </Typography>
                                 <Typography variant="subtitle1" gutterBottom>
                                     {movieInfo.Awards}

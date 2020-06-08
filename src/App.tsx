@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Movie from './views/movie/Movie';
 import SearchMovie from './views/searchMovie/SearchMovie';
 import Home from './views/home/Home';
+import WatchLater from './views/watchLater/WatchLater'
 import TodoPanel from './views/todoPanel/TodoPanel';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/movie/:id" component={Movie}/>
             <Route path="/search" component={SearchMovie}/>
             <Route path="/todo" component={TodoPanel}/>
+            <Route path="/watchlater" component={WatchLater}/>
             <Route path="/" component={Home}/>
           </Switch>
         </Provider>

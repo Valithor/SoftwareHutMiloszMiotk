@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
-import { Home, Movie, Search } from '@material-ui/icons';
+import { Home, Movie, Search, Bookmark } from '@material-ui/icons';
 import { Drawer, Icon } from '@material-ui/core';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import { useHistory } from 'react-router';
@@ -58,6 +58,12 @@ const DrawerComponent: React.FC<IDrawerComponentProps> = ({ shouldBeOpen }) => {
                         color="inherit"
                         aria-label="home"  >
                         <Search />
+                        </IconButton></button></li>
+                        <li><button className={classes.button} onClick={() => history.push('/watchlater')} ><IconButton
+                        edge="start"
+                        color="inherit"
+                        aria-label="home"  >
+                        <Bookmark />
                         </IconButton></button></li>
                     </ul>
                 </div>
